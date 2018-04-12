@@ -1,2 +1,11 @@
-language : java
-sudo : false
+sudo : required
+
+before_install: 
+	- gem install asciidoctor
+	- gem install asciidoctor-pdf --pre
+
+script:
+	asciidoctor-pdf yolo.adoc -o yolo.pdf
+
+after_success:
+	- echo Done!
