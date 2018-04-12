@@ -6,6 +6,7 @@ before_install:
 
 script:
 	- asciidoctor-pdf yolo.adoc -o yolo.pdf
+	- asciidoctor yolo.adoc -o yolo.html
 
 after_success:
 	- echo Done!
