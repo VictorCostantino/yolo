@@ -1,5 +1,6 @@
 sudo : required
 
+github-token: Token
 
 before_install: 
 	- gem install asciidoctor
